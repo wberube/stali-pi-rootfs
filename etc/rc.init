@@ -55,8 +55,10 @@ fi
 
 ulimit -c unlimited
 
-sleep 1
+sleep 2
+
 loadkeys de
+
 echo
 /bin/sh -c '/bin/respawn /bin/getty /dev/tty1 linux' &>/dev/null &
 /bin/sh -c '/bin/respawn /bin/getty /dev/tty2 linux' &>/dev/null &
